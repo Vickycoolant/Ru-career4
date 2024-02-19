@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>career building & followup form</title>
+        <link rel="stylesheet" href="./style.css">
+    
+    </head>
+    <body>
+
+        <h1>RU Student career building platform</h1>
+        <div class="logo">
+         <img id="logo" src="./Riara-logo.jpg" height="200" width="400">
+        </div>
+        <h2>Data entry form</h2><hr>
+     <form action="">
+        <h3>Pease enter your personal details bellow: </h3><br><br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+               
+              <img id="java" src="./images (1).jpg" style="">
+              <div class="text">Build towards your career!</div>
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img id="html" src="./images.jpg" style="">
+              <div class="text">Put in the work</div>
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img id="css" src="./download.jpg" style="">
+              <div class="text">Be  versatile </div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script><br><br><hr>
+            
+       <fieldset>
+        <legend>Student Personal information</legend><br>
+        <input id="fname" type="text" name="name" placeholder="Your first name">
+        <label for="fname">First name</label><br><br>
+        <input id="sname" type="text" name="name" placeholder="Your second name">
+        <label for="sname">Second name</label><br><br>
+
+        <input type="email" id="email" name="student email" placeholder="Your Email">
+        <label for="email">Student Email</label><br><br>
+
+        <input type="number" id="id" name="student-id" placeholder="Your Student ID">
+        <label for="id">Student ID</label><br><br>
+        
+
+        <input type="tel" id="tel" name="telephone" placeholder="Your phone number" >
+        <label for="tel">Phone number</label><br><br>
+
+        <input type="text" id="nationality" name="nationality" placeholder="Your resident country">
+        <label for="nationality">Country of origin</label><br><br>
+         
+        <input list="year" id="year" name="year of study" placeholder="Current year of study">
+          <datalist id="year">
+            <option value="1st">First year</option>
+            <option value="2nd">Second year</option>
+            <option value="3rd">Third year</option>
+            <option value="4th">Fourth year</option>
+            <option value="PostGrad">Post graduate</option>
+          </datalist>
+        <label for="year">Year of study</label><br><br>
+        <input type="text" id="course" name="course" placeholder="Course">
+        <label for="course">Your Program/course</label><br><br>
+        <input type="file" id="Passport" name="Passport-photo">
+        <label for="passport">Passport-photo upload(jpg)</label>
+       </fieldset><br>
+       <hr>
+
+       <fieldset>
+        <legend>Student personal opinions and preferences</legend>
+        <p>What would be your prefered career path(s)?</p>
+        <input type="checkbox" id="career" name="Career path" value="Cyber security">
+        <label for="career">Cyber security</label>
+        <input type="Checkbox" id="career" name="career path" value="Data Science">
+        <label for="career">Data Science</label>
+        <input type="Checkbox" id="career" name="career path" value="web developement" checked>
+        <label for="career">Web developement</label><br><br>
+        <input type="Checkbox" id="career" name="career path" value="Application developement">
+        <label for="career">Application developement</label><br>
+        <p>How do you prefer to meet? </p>
+        <input type="radio" id="meet" name="meeting" value="online" checked>
+        <label for="meet">Online platforms; Google meet ...etc.</label><br>
+        <input type="radio" id="meet" name="meeting" value="physically">
+        <label for="meet">physically</label><br>
+        <p>What are/is your favourite programming language(s)?</p>
+
+        <input type="checkbox" id="fav-lang" name="language" value="java" checked >
+         <label for="fav-lang">Java</label>
+         <input type="checkbox" id="fav-lang" name="language" value="CSS" >
+         <label for="fav-lang">CSS</label>
+         <input type="checkbox" id="fav-lang" name="language" value="java Script" >
+         <label for="fav-lang">Java Script</label>
+         <input type="checkbox" id="fav-lang" name="language" value="HTML" >
+         <label for="fav-lang">HTML</label>
+         <input type="checkbox" id="fav-lang" name="language" value="C" >
+         <label for="fav-lang">C</label>
+         <input type="checkbox" id="fav-lang" name="language" value="C++" >
+         <label for="fav-lang">C++</label>
+       </fieldset><br><hr>
+       <legend></legend>
+       <fieldset>
+        <legend>Current skill set</legend>
+        <label for="Skillset">Skillset info: </label>
+        <textarea name="Skillset" id="Skillset" cols="50" rows="10">Write a description of your current abilities below</textarea>
+        
+
+       </fieldset>
+      </form>
+      <h4>For more information visit @: <a id="unilink" href="https://riarauniversity.ac.ke/">https://riarauniversity.ac.ke/</a></h4>
+      
+
+
+
+
+
+
+
+    </body>
+</html>
